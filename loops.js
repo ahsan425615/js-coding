@@ -131,23 +131,108 @@ const coding =["js", "ruby", "java", "c++", "python", "c#"]
 //     console.log(item, arr, index);
 // })
 
-const myc = [
-    {
-        lan1: "js",
-        lann: "jb"
-    },
-    {
-        lan2: "js1",
-        lann: "jb2"
-    },
-    {
-        lan3: "js1",
-        lann: "jb3"
-    }
-]
-myc.forEach( (item) => {
-    console.log(item.lan2);
-})
+// const myc = [
+//     {
+//         lan1: "js",
+//         lann: "jb"
+//     },
+//     {
+//         lan2: "js1",
+//         lann: "jb2"
+//     },
+//     {
+//         lan3: "js1",
+//         lann: "jb3"
+//     }
+// ]
+// myc.forEach( (item) => {
+//     console.log(item.lan2);
+// })
+
+
+
+// const num = [1,2,3,4,5,6,7,8,9,10]
+// const newnum = num.filter( (num) => num > 4 )
+// console.log(newnum);
+
+//using {} we will use return
+
+const n = [1,2,3,4,5,6,7,8,9,10]
+// const num = n.filter((n) => {
+//     return n > 4
+    
+// })
+// console.log(num);
+
+// using for each
+
+// const newnums = []
+// n.forEach( (num) =>{
+//     if (num>4) {
+//         newnums.push(num)        
+//     }
+// })
+
+
+//using filters*************************************************************************
+
+// const books = [
+//     {title: 'book1', genre: 'fiction', publish: 1990, edition: 2004},
+//     {title: 'book2', genre: 'fiction-non', publish: 1993, edition: 2005},
+//     {title: 'book3', genre: 'economics', publish: 1995, edition: 2006},
+//     {title: 'book4', genre: 'math', publish: 1997, edition: 2007},
+//     {title: 'book5', genre: 'science', publish: 1996, edition: 2008},
+//     {title: 'book6', genre: 'computer', publish: 1997, edition: 2009},
+//     {title: 'book7', genre: 'history', publish: 1998, edition: 2010},
+// ];
+// let userbooks = books.filter( (bk) => bk.genre === 'history')
+// userbooks = books.filter((bk)=>{
+//     return bk.publish >= 1995 && bk.genre === 'history'})
+// console.log(userbooks);
+
+
+const number = [1,2,3,4,5,6,7,8,9,10]
+
+// const newnum = number.map( (num) => num + 10  )
+// console.log(newnum);
+
+
+//chaining*******************************************
+
+const newnum = number
+.map( (num) => num * 10 )
+.map(  (num) => num + 1)
+.filter( (num) => num >=40)
+// console.log(newnum)
+
+//reduce*****************************************************************
+
+const num = [1,2,3]
+
+const tot = num.reduce((acc,cval) => {
+    console.log(`acc ${acc} and cval: ${cval}`);
+    return acc + cval
+}, 0)
+console.log(tot);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
