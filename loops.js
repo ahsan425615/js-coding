@@ -63,11 +63,91 @@
 // } while (score<10);
  
 
+// *************************************
+// for of
+
+// const arr = [1,2,3,4,5]
+// for (const num of arr) {
+//     // console.log(num);
+// }
+// const stringo = "hello world"
+// for (const i of stringo) {
+//     console.log(`Each character is: ${i}`);
+    
+// }
+
+
+//************ */
+// map
+
+// const map = new Map()
+// map.set('p','pak')
+// map.set('ch','china')
+// map.set('us','usa')
+// console.log(map);
+
+// for (const [key, value] of map) {
+//     console.log(key, ':-', value);
+// }
+
+// **********************//
+//object's loop
+
+// const myobj = {
+//     js: "java script",
+//     cpp: "c++",
+//     rb: "rubby",
+//     swift: "swift by apple"
+// }
+
+// for (const key in myobj) {
+//     console.log(`${key} shorcut is for ${myobj[key]}`);
+    
+// }
+
+//*********************************************** */
+//for each loop
+
+const coding =["js", "ruby", "java", "c++", "python", "c#"]
+// coding.forEach( function (item) {
+//     console.log(item);
+// })
+//(((((((((((((((())))))))))))))))
+// coding.forEach( (val) => {
+//     console.log(val);
+// })
+
+// function printme(item){
+//     console.log(item);
+// }
+
+// coding.forEach(printme)
 
 
 
 
 
+// coding.forEach( (item, arr, index)=>{
+//     console.log(item, arr, index);
+// })
+
+const myc = [
+    {
+        lan1: "js",
+        lann: "jb"
+    },
+    {
+        lan2: "js1",
+        lann: "jb2"
+    },
+    {
+        lan3: "js1",
+        lann: "jb3"
+    }
+]
+myc.forEach( (item) => {
+    console.log(item.lan2);
+})
 
 
 
