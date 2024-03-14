@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom in js</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langname){
+        const li = document.createElement('li');
+        li.innerHTML = `${langname}`
+        document.querySelector('.language').
+        appendChild(li)
+
+    }
+    addlanguage("python")
+    addlanguage("c++")
+    addlanguage("java")
+
+    function addOptiLanguage(langname){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addOptiLanguage('golang')
+
+    //Edit
+
+    const flang = document.querySelector("li:nth-child(2)")
+    console.log(flang);
+    const newli = createElement('li')
+    newli.textContent = "mojo"
+    flang.replaceWith(newli)
+    // Edit
+    const slang = document.querySelector("li:first-child")
+    slang.outerHTML = '<li>Typescript</li>'
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
