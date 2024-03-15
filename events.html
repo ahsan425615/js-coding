@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events is JS</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <h2>images</h2>
+    <div>
+        <ul id="images">
+            <li><img src="https://www.pexels.com/photo/sunbeds-on-beach-17037983/" alt="photo1" id="pic1"></li>
+            <li><img src="https://www.pexels.com/photo/a-cat-laying-on-the-ground-20491187/" alt="cat" id="pic2"></li>
+            <li><img src="https://www.pexels.com/photo/house-on-the-lake-20496825/" alt="house" id="pic3"></li>
+            <li><img src="https://www.pexels.com/photo/a-black-table-with-a-candle-and-a-vase-20522236/" alt="books" id="pic4"></li>
+            <li><img src="https://www.pexels.com/photo/cathedral-19981842/" alt="building" id="pic5"></li>
+            <a href="google.com" id="google">google.com</a>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("click inside the ul");
+    // })
+    // document.getElementById('pic3').addEventListener('click', function(e){
+    //     console.log("qwl clicker");
+    //     e.stopPropagation()
+    // })
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log("google click");
+    //     e.preventDefault()
+    // })
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tsgName === 'IMG'){  
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode 
+        removeIt.remove()
+        }
+
+
+        // removeIt.parentNode.removeChild(removeIt)
+   
+    })
+
+
+
+
+</script>
+</html>
