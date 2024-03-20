@@ -22,3 +22,8 @@ class Teacher extends User {
 const iphone = new Teacher("iphone", "i@gmail.com")
 iphone.logMe();
 
+
+
+
+
+
